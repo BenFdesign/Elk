@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#172d29">
+  <meta name="description" content="Suivi personnel des tâches, des journées et des journaux, sans compte.">
+  <title>Elk — espace personnel</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="src/core.js"></script>
+  <script defer src="src/app.js"></script>
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div><h1>Elk<span>.</span></h1></div>
+      <nav class="quick-nav" aria-label="Navigation principale">
+        <button type="button" data-page="home" aria-label="Vue d’ensemble" title="Vue d’ensemble">🌀</button>
+        <button type="button" data-page="dream" aria-label="Journal rêve" title="Journal rêve">🌜</button>
+        <button type="button" data-page="daily" aria-label="Daily" title="Daily">📆</button>
+        <button type="button" data-page="analysis" aria-label="Analyse" title="Analyse">📊</button>
+        <button type="button" data-page="tasks" aria-label="Modifier les tâches" title="Modifier les tâches">⚙️</button>
+        <button type="button" data-page="data" aria-label="Sauvegarde" title="Sauvegarde">💾</button>
+      </nav>
+    </header>
+    <main id="main"></main>
+    <div id="notice" role="status" aria-live="polite"></div>
+  </div>
+  <dialog id="dialog"><div id="dialog-content"></div></dialog>
+  <noscript>Activez JavaScript pour utiliser Elk.</noscript>
+</body>
+</html>
